@@ -1,3 +1,10 @@
+#kelompok
+- Rafindra Sandi Putra Atmaja (262)
+- Rama Prastaruna Wijaya (277)
+- Arya kusuma (280)
+- Dimas Imam Ghifari (289)
+- Faisal Ramadhani (292)
+
 # El Movie App
 El Movie App adalah aplikasi berbasis Flutter yang menggunakan package GetX untuk state management dan navigasi antar halaman. Aplikasi ini bertujuan untuk menampilkan halaman login, halaman beranda (Home), serta profil pengguna dengan fitur upload foto. Aplikasi ini juga menggunakan gambar film dan serial untuk menampilkan daftar top movies dan top series.
 
