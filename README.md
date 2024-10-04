@@ -1,0 +1,64 @@
+# El Movie App
+El Movie App adalah aplikasi berbasis Flutter yang menggunakan package GetX untuk state management dan navigasi antar halaman. Aplikasi ini bertujuan untuk menampilkan halaman login, halaman beranda (Home), serta profil pengguna dengan fitur upload foto. Aplikasi ini juga menggunakan gambar film dan serial untuk menampilkan daftar top movies dan top series.
+
+# Fitur Utama
+Login Screen: Pengguna dapat login menggunakan email atau nomor telepon. Halaman ini juga menyediakan validasi untuk memeriksa apakah email atau nomor telepon yang dimasukkan sudah benar.
+
+Home Screen: Setelah berhasil login, pengguna akan diarahkan ke halaman beranda (Home). Di halaman ini, pengguna dapat:
+- Mengunggah foto profil.
+- Melihat gambar-gambar dari film dan serial populer.
+- Memilih kategori seperti "Movies", "Series", dan "Categories".
+- Menampilkan detil film atau serial pilihan seperti "Avengers: Endgame".
+- Melakukan aksi seperti "Play" atau menambah film ke "My List".
+Profile Picture Upload: Fitur ini memungkinkan pengguna untuk mengunggah foto profil dari galeri perangkat mereka.
+
+Top Movies & Series Section: Halaman ini menampilkan gambar-gambar film dan serial TV populer yang bisa di-scroll secara horizontal.
+
+# Package yang Digunakan
+GetX: Digunakan untuk state management dan navigasi antar halaman (GetMaterialApp).
+Image Picker: Digunakan untuk mengambil gambar dari galeri perangkat pengguna.
+
+# File-File Utama
+1. main.dart
+File ini adalah entry point aplikasi. Aplikasi dimulai dari TailwindToFlutterApp yang memuat halaman login (LoginScreen).
+
+2. LoginScreen
+Halaman login yang memungkinkan pengguna untuk memasukkan email atau nomor telepon dan password untuk melakukan login. Ada validasi yang dilakukan terhadap email dan nomor telepon. Setelah berhasil login, pengguna akan diarahkan ke halaman HomeScreen.
+
+3. HomeScreen
+Halaman utama yang menampilkan beberapa fitur:
+- Logo aplikasi.
+- Foto profil yang dapat diunggah oleh pengguna.
+- Daftar top movies dan top series.
+- Tombol aksi untuk "Play" atau "Add to My List".
+- Navigasi melalui bottom navigation bar.
+  
+4. ImagePickerController
+Controller yang bertanggung jawab untuk mengambil gambar dari galeri perangkat menggunakan package ImagePicker.
+
+# Navigasi
+Aplikasi ini menggunakan GetX untuk navigasi antar halaman, yaitu dari halaman login menuju halaman utama (Home) setelah pengguna berhasil login.
+Bottom Navigation Bar
+Bagian ini menampilkan tiga ikon navigasi: Home, New & Hot, dan Profile.
+
+# Cara Menjalankan Aplikasi
+1. Clone repository.
+   Jalankan perintah berikut untuk menginstall dependencies:
+   bash
+   Salin kode
+   flutter pub get
+2. Jalankan aplikasi di emulator atau perangkat fisik menggunakan perintah:
+   bash
+   Salin kode
+   flutter run
+   
+# Dependencies
+Tambahkan dependencies berikut pada file pubspec.yaml:
+yaml
+Salin kode
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.3.8
+  image_picker: ^0.8.4+2
+  
